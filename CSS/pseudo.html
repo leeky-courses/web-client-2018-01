@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first web page</title>
+  <style>
+    p:last-child {
+      color: green;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+    p::first-letter {
+      color: blue;
+      font-size: xx-large;
+    }
+    p::first-line {
+      color: red;
+      font-variant: small-caps;
+    }
+    h1::before {
+      content: url(smiley.gif);
+    }
+  </style>
+</head>
+<body>
+  <p>This is the first sentense. This is the next sentence.
+  Then a next sentence and then a next sentence</p>
+  <h1>This is a smiley heading</h1>
+  <p>This is the last paragraph. It will show an effect of
+  p:last-child where the effect is applied only to the last paragraph</p>
+</body>
+</html>
